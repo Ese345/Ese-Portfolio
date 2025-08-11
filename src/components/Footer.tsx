@@ -7,9 +7,9 @@ const Footer = () => {
   <footer className="py-8 sm:py-12 border-t border-border bg-card/50">
   <div className="container mx-auto px-2 sm:px-6">
   <div className="max-w-6xl mx-auto w-full">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8 mb-8">
             {/* Brand */}
-            <div className="space-y-4">
+            <div className="space-y-4 text-center md:text-left">
               <h3 className="text-xl font-playfair font-semibold gradient-text">
                 Eseoghene Emerorota
               </h3>
@@ -20,9 +20,9 @@ const Footer = () => {
             </div>
 
             {/* Quick Links */}
-            <div className="space-y-4">
+            <div className="space-y-4 text-center md:text-left">
               <h4 className="font-semibold">Quick Links</h4>
-              <nav className="space-y-2">
+              <nav className="flex flex-col items-center md:items-start space-y-2">
                 <a 
                   href="#about" 
                   className="block text-muted-foreground hover:text-primary transition-colors"
@@ -45,9 +45,9 @@ const Footer = () => {
             </div>
 
             {/* Social Links */}
-            <div className="space-y-4">
+            <div className="space-y-4 text-center md:text-left">
               <h4 className="font-semibold">Connect</h4>
-              <div className="flex space-x-4">
+              <div className="flex flex-col items-center space-y-2 sm:flex-row sm:space-x-4 sm:space-y-0 justify-center md:justify-start">
                 <a
                   href="https://github.com/Ese345"
                   target="_blank"
@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
 
           {/* Bottom Bar */}
-          <div className="pt-6 md:pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0 gap-2">
+          <div className="pt-6 md:pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center text-center space-y-3 md:space-y-0 gap-2">
             <p className="text-muted-foreground text-sm flex items-center">
               © {currentYear} Eseoghene Emerorota. Made with 
               <Heart className="w-4 h-4 mx-1 text-red-500" /> 
