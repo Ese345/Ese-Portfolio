@@ -86,14 +86,11 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-  <div className="absolute bottom-4 sm:bottom-8 left-[700px] opacity-0 animate-fade-in-up animate-delay-300 px-2">
-        <div className="flex flex-col items-center space-y-2">
-          <span className="text-sm text-muted-foreground">Scroll to explore</span>
-          <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-bounce" />
-          </div>
-        </div>
-      </div>
+  <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in-up animate-delay-300 px-2">
+    <div className="flex flex-col items-center">
+      <ArrowDown className="w-8 h-8 text-primary animate-bounce" />
+    </div>
+  </div>
     </section>
   );
 };
