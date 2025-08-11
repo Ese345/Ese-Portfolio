@@ -78,9 +78,13 @@ const Footer = () => {
           <div className="pt-6 md:pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0 gap-2">
             <p className="text-muted-foreground text-sm flex items-center">
               © {currentYear} Eseoghene Emerorota.
+              
+            </p>
+            <p className="text-muted-foreground text-sm">
               Made with 
               <Heart className="w-4 h-4 mx-1 text-red-500" /> 
               and passion.
+              
             </p>
             <p className="text-muted-foreground text-sm">
               Built with React, TypeScript & Tailwind CSS
